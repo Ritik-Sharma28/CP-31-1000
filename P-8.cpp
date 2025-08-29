@@ -6,7 +6,9 @@ using namespace std;
 
 int count(vector<int> &v){
     int cnt = 0;
-    for(auto &i:v) i+=cnt;
+    for(auto &i:v) {
+        if(i > 0 ) cnt++;
+    }
 
     return cnt;
 }
